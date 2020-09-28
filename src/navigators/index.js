@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 // import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 // import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import { HomePage } from '../modules';
+import { HomePage, HomeContainer } from '../modules';
 
 import { Screen } from '../constants';
 
@@ -19,7 +19,7 @@ function RootApp() {
             <Stack.Navigator headerMode='none' initialRouteName={Screen.SPLASH_PAGE}>
 
                 {/* Home Page */}
-                <Stack.Screen name={Screen.HOME} component={HomePage} />
+                <Stack.Screen name={Screen.HOME} component={HomeContainer} />
 
             </Stack.Navigator>
         </NavigationContainer>

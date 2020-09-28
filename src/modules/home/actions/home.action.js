@@ -1,0 +1,4 @@
+//Sign-in
+export const TEST_DATA = 'TEST_DATA';
+export const TEST_DATA_SUCCESSFULLY = 'TEST_DATA_SUCCESSFULLY';
+export const TEST_DATA_FAILED = 'TEST_DATA_FAILED';

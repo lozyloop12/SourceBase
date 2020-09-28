@@ -9,9 +9,9 @@ class Home extends PureComponent {
     };
   };
 
-  // componentDidMount = () => {
-  //   SplashScreen.hide();
-  // };
+  componentDidMount = () => {
+    this.props.onGetData()
+  };
 
 
   render() {

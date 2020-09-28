@@ -3,8 +3,10 @@ import qs from 'qs';
 
 import { getOAuthToken } from '../config/store.config';
 
-export const Host = 'https://towash-development.nestsera.com';
-export const BaseURL = `${Host}/api/v1/`; // Develop
+// export const Host = 'https://towash-development.nestsera.com';
+// export const BaseURL = `${Host}/api/v1/`; // Develop
+export const Host = 'https://pastebin.com/raw/3q49Q5uC';
+export const BaseURL = `${Host}`; // Develop
 
 axios.defaults.baseURL = `${BaseURL}`;
 axios.defaults.timeout = 20000;

@@ -1,12 +1,12 @@
 import React, { PureComponent } from 'react';
 import { SafeAreaView } from 'react-native';
 import { Provider } from 'react-redux';
-
+import Root from './RootContainer';
 import Main from './navigators';
 import { store } from './store';
 
 
-class RootApp extends PureComponent {
+class App extends PureComponent {
     constructor(props) {
         super(props);
     }
@@ -14,12 +14,12 @@ class RootApp extends PureComponent {
     render() {
         return (
             <SafeAreaView style={{ flex: 1 }}>
-                {/* <Provider store={store}> */}
-                <Main />
-                {/* </Provider> */}
+                <Provider store={store}>
+                    <Root />
+                </Provider>
             </SafeAreaView>
         );
     }
 }
 
-export default RootApp;
+export default App;
